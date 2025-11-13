@@ -4,13 +4,6 @@ This repository collects selected projects completed during my Mechanical & Elec
 
 ## 📁 Project Index
 
-### Embedded & Digital Systems
-- **Voice-Controlled RC Car (Arduino)**  
-  Real-time audio thresholding, servo control, PWM, and accessibility-focused design.
-
-- **Dual-Wavelength Pulse Oximeter**  
-  Analogue front-end, LED driving, signals, filtering, and microcontroller sampling.
-
 - **FPGA Development (Cyclone V / HDL)**  
   HDL modules, testbenches, finite-state machines, and timing-driven design.
 
