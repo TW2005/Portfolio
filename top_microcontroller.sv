@@ -9,7 +9,7 @@ module top_microcontroller (
     input  logic [3:0]  KEY,
     output logic [9:0]  LEDR
 );
-    // Active-low reset from KEY0
+    logic reset_n;
     logic reset;
     logic [7:0] pc;
     logic [15:0] instr;
@@ -30,7 +30,8 @@ module top_microcontroller (
     logic       pwm_enable;
     logic       pwm_out;
 
-    assign reset   = ~KEY[0];
+    assign reset_n = KEY[0];
+    assign reset   = ~reset_n;
 
     cpu_core u_cpu (
         .clk(CLOCK_50),
